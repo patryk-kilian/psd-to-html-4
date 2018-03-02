@@ -1,0 +1,16 @@
+.section-blog {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.blog {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  &__post {
+    flex: 0 0 30%;
+    text-align: left;
+  }
+}

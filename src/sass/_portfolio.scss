@@ -1,0 +1,42 @@
+.section-portfolio {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.portfolio {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(10rem, 20rem) repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 2rem;
+
+  &__image {
+    justify-self: center;
+  }
+}
+
+.portfolio-nav {
+  grid-row: 1 / span 6;
+  grid-column: 1 / span 1;
+  text-align: left;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 2.2rem;
+      color: $text-color2;
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 6rem;
+      transition: color .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $main-color2;
+    }
+
+
+  }
+}

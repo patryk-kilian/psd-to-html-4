@@ -1,0 +1,91 @@
+.section-about {
+  background-image: url(../images/john.png);
+  min-height: 60rem;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__container {
+    max-width: 120rem;
+    min-height: inherit;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image-box {
+    flex: 0 0 30%;
+  }
+}
+
+.about-description {
+  flex: 0 0 30%;
+  text-align: right;
+}
+
+.skills {
+  flex: 0 0 30%;
+  height: 30rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__item {
+    // margin-top: 3rem;
+  }
+
+  &__bar {
+    width: 70%;
+    height: 12px;
+    margin: 5px auto;
+    border-radius: 10px;
+
+    &--design { background: linear-gradient(105deg, $main-color2 0%, $main-color2 80%, $main-color3 20%); }
+    &--photography { background: linear-gradient(105deg, $main-color2 0%, $main-color2 65%, $main-color3 35%); }
+    &--marketing { background: linear-gradient(105deg, $main-color2 0%, $main-color2 50%, $main-color3 50%); }
+    &--branding { background: linear-gradient(105deg, $main-color2 0%, $main-color2 30%, $main-color3 20%,$main-color3 30%); }
+  }
+}
+
+//CONTACT
+
+.contact {
+  min-height: 30rem;
+  background-color: #dcdcde;
+
+  &__list {
+    max-width: 120rem;
+    margin: 0 auto;
+    min-height: inherit;
+    padding: 0 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex: 0 0 30%;
+  }
+
+  &__icon-box {
+    min-height: 9rem;
+    min-width: 9rem;
+    border-radius: 50%;
+    background-color: #374362;
+    margin-right: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+   font-size: 4rem;
+   color: #fff;
+  }
+}
