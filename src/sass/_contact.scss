@@ -1,5 +1,48 @@
 .section-contact {
   text-align: center;
   padding: 6rem 2rem;
+  background-image: url(../images/bg3.jpg);
+}
+
+.form-box {
   background-color: $main-color1;
+  max-width: 120rem;
+  min-height: 60rem;
+  padding: 6rem 10rem;;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__name,
+  &__phone,
+  &__email {
+    flex: 0 0 30%;
+    min-height: 5rem;
+    padding: 1rem;
+
+    &::-webkit-input-placeholder {
+      color: #777777;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__text {
+    flex: 0 0 100%;
+    margin-top: 2rem;
+    min-height: 11rem;
+    padding: 1rem;
+
+    &::-webkit-input-placeholder {
+      color: #777777;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__submit {
+    margin: 4rem auto;
+  }
 }

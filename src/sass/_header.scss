@@ -53,23 +53,6 @@
     }
   }
 
-  &__button {
-
-    &:link,
-    &:visited {
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      color: $color-white;
-      background: linear-gradient(49deg, $main-color2, $main-color3);
-      margin-top: 6rem;
-      padding: 2rem 4rem;
-      transition: all .3s;
-    }
-
-    &:hover {
-      background: linear-gradient(-49deg, $main-color2, $main-color3);
-    }
-  }
 }
 
 .navigation {

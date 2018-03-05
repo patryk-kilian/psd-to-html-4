@@ -108,5 +108,39 @@ ul {
   color: $main-color2;
 }
 
-//MAIN PAGE
+//BUTTONS
 
+.main-btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: $color-white;
+    background: linear-gradient(49deg, $main-color2, $main-color3);
+    margin-top: 6rem;
+    padding: 2rem 4rem;
+    transition: all .3s;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: linear-gradient(-49deg, $main-color2, $main-color3);
+  }
+}
+
+.footer {
+  padding: 4rem;
+  text-align: center;
+
+  &__copy {
+    color: $text-color1;
+    font-size: 1.5rem;
+
+    &--color {
+      color: $main-color2;
+      font-weight: 700;
+    }
+  }
+}
