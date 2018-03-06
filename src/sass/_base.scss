@@ -15,6 +15,13 @@ $text-color2: #4d4d4d;
 .u-text-right { text-align: right; }
 .u-text-left { text-align: left; }
 
+//MEDIA BREAKPOINTS
+
+$bp-largest: 75em;
+$bp-large: 56.25em;
+$bp-medium: 43.75em;
+$bp-small: 37.5em;
+
 // BASIC RESET
 
 *,
@@ -28,6 +35,18 @@ $text-color2: #4d4d4d;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 43.75%;
+  }
 }
 
 body {
@@ -87,8 +106,6 @@ ul {
   }
 
   &--section-about {
-    width: 90%;
-    float: right;
     line-height: 3rem;
     margin-top: 3rem;
   }

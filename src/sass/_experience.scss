@@ -14,6 +14,12 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__tittle-box {
     color: $color-white;
     font-weight: 600;
@@ -22,6 +28,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      order: -1;
+      padding: 2rem 0;
+      border-bottom: 2px solid #dcdcde;
+    }
 
   }
 
@@ -38,6 +51,12 @@
     display: flex;
     align-items: center;
 
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+
     &--right {
       &::before {
         content: "";
@@ -47,6 +66,10 @@
         width: 2rem;
         height: 6.2rem;
         transform: translateX(-6rem);
+
+        @media only screen and (max-width: $bp-medium) {
+          display: none;
+        }
       }
     }
 
@@ -59,6 +82,10 @@
         width: 2rem;
         height: 6.2rem;
         transform: translateX(6rem);
+
+        @media only screen and (max-width: $bp-medium) {
+          display: none;
+        }
       }
     }
 

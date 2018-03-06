@@ -9,16 +9,28 @@
 .testimonial {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 2rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__text {
     flex: 0 0 40%;
     text-align: right;
     margin-right: 10rem;
     position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
+      text-align: center;
+      margin: 0 0 3rem 0;
+    }
 
     &::before {
       content: "“";
@@ -41,6 +53,10 @@
     border-radius: 50%;
     border: 10px solid $color-white;
     margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0 0 3rem 0;
+    }
   }
 
   &__author {

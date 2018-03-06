@@ -1,8 +1,20 @@
 .section-about {
   background-image: url(../images/john.png);
   min-height: 60rem;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  padding: 4rem 2rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    background-size: 50%;
+    min-height: 55rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    background-image:  linear-gradient(rgba($color-white, .7), rgba($color-white, .7)), url(../images/john.png);
+    background-size: cover;
+    background-position: center;
+  }
 
   &__container {
     max-width: 120rem;
@@ -12,6 +24,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__image-box {
@@ -20,18 +38,28 @@
 }
 
 .about-description {
-  flex: 0 0 30%;
+  flex: 0 0 33%;
   text-align: right;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 95%;
+    text-align: center;
+  }
 }
 
 .skills {
-  flex: 0 0 30%;
+  flex: 0 0 35%;
   height: 30rem;
   text-align: center;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+    margin-top: 3rem;
+  }
   &__item {
     // margin-top: 3rem;
   }
@@ -55,6 +83,10 @@
   min-height: 30rem;
   background-color: #dcdcde;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 4rem 0;
+  }
+
   &__list {
     max-width: 120rem;
     margin: 0 auto;
@@ -64,12 +96,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
     flex: 0 0 30%;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
   }
 
   &__icon-box {
@@ -82,6 +124,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__text-box {
+    @media only screen and (max-width: $bp-large) {
+      width: 30%;
+      text-align: center;
+    }
   }
 
   &__icon {
