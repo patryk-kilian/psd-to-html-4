@@ -1,9 +1,9 @@
 .header {
   height: 100vh;
+  min-height: 70rem;
   background-image: url(../images/bg1.jpg);
   background-size: cover;
   background-position: center;
-  // position: relative;
 
   display: flex;
   flex-direction: column;
@@ -28,6 +28,10 @@
       @media only screen and (max-width: $bp-small) {
         font-size: 1.6rem;
       }
+
+      @media only screen and (max-width: $bp-extrasmall) {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -50,7 +54,11 @@
       color: transparent;
 
       @media only screen and (max-width: $bp-small) {
-        font-size: 15rem;
+        font-size: 13rem;
+      }
+
+      @media only screen and (max-width: $bp-extrasmall) {
+        font-size: 9rem;
       }
     }
 
@@ -60,7 +68,11 @@
       text-indent: 6.2rem;
 
       @media only screen and (max-width: $bp-small) {
-        font-size: 8rem;
+        font-size: 6rem;
+      }
+
+      @media only screen and (max-width: $bp-extrasmall) {
+        font-size: 2.5rem;
       }
     }
   }
@@ -72,9 +84,16 @@
   top: 0;
   background-color: $main-color1;
   width: 100%;
+  padding: 0 2rem;
+  z-index: 100;
+  transition: all .3s;
 
   @media only screen and (max-width: $bp-large) {
-    display: none;
+    transform: translateY(-30rem);
+  }
+
+  &--visible {
+    transform: translateY(0);
   }
 
   &__list {
@@ -84,6 +103,12 @@
 
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
   &__item {
@@ -98,6 +123,15 @@
         flex-grow: 1;
         width: 1rem;
         margin-left: 3rem;
+
+        @media only screen and (max-width: 62.5em) {
+          margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          display: none;
+        }
+
       }
     }
   }
@@ -106,7 +140,7 @@
 
     &:link,
     &:visited {
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       color: $color-white;
       text-transform: uppercase;
       transition: color .2s;
@@ -116,5 +150,39 @@
     &:active {
       color: #a21af0;
     }
+  }
+}
+
+.hamburger-button {
+  font-size: 6rem;
+  color: $color-white;
+  cursor: pointer;
+  transition: color .3s;
+
+  &:hover {
+    color: $main-color3;
+  }
+}
+
+.hamburger-button {
+  background: linear-gradient(rgba($main-color1, .9), rgba($main-color1, .9));
+  padding: 1.8rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  border-radius: 5px;
+  z-index: 100;
+  border: none;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    display: flex;
+  }
+
+  &__icon {
+    font-size: 4rem;
   }
 }

@@ -10,16 +10,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">about</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">our services</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">portfolio</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">experience</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">blog</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+        <li class="navigation__item"><a href="#header" class="navigation__link">home</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
+        <li class="navigation__item"><a href="#services" class="navigation__link">our services</a></li>
+        <li class="navigation__item"><a href="#portfolio" class="navigation__link">portfolio</a></li>
+        <li class="navigation__item"><a href="#experience" class="navigation__link">experience</a></li>
+        <li class="navigation__item"><a href="#blog" class="navigation__link">blog</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">contact</a></li>
       </ul>
     </nav>
 
@@ -30,19 +30,19 @@
     </h1>
     <p class="header__paragraph header__paragraph--bottom">i have more then 10 years of experience</p>
     <a href="#" class="main-btn">Download cv</a>
+    <button class="hamburger-button">
+      <span class="fa fa-bars hamburger-button__icon"></span>
+    </button>
   </header>
 
   <main>
-    <section class="section-about">
+    <section id="about" class="section-about">
       <div class="section-about__container">
         <article class="about-description">
           <h2 class="heading2">John Smith</h2>
           <p class="paragraph-colored paragraph--bold">web designer</p>
           <p class="paragraph paragraph--section-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, error. Totam aliquid eaque soluta animi magnam eveniet, dolor repudiandae numquam obcaecati aliquam quisquam aperiam, iusto fugit ullam dignissimos, modi odit. Numquam obcaecati aliquam quisquam aperiam, iusto fugit ullam dignissimos, modi odit.</p>
         </article>
-        <!-- <figure class="section-about__image-box">
-          <img class="section-about__image" src="./images/john.png" alt="">
-        </figure> -->
         <ul class="skills">
           <li class="skills__item">
             <p class="paragraph paragraph--big paragraph--uppercase paragraph--bold">design ( 80% )</p>
@@ -93,7 +93,7 @@
       </ul>
     </div>
 
-    <section class="section-services">
+    <section id="services" class="section-services">
       <h2 class="heading2">Our Services</h2>
       <p class="paragraph paragraph--big u-margin-bottom-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <ul class="services">
@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <section class="section-portfolio">
+    <section id="portfolio" class="section-portfolio">
       <h2 class="heading2">portfolio</h2>
       <p class="paragraph paragraph--big u-margin-bottom-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="portfolio">
@@ -166,7 +166,7 @@
       </div>
     </section>
 
-    <section class="section-experience">
+    <section id="experience" class="section-experience">
       <h2 class="heading2 heading2--white">experience</h2>
       <p class="paragraph paragraph--big u-margin-bottom-big paragraph--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="experience">
@@ -199,7 +199,7 @@
       </div>
     </section>
 
-    <section class="section-blog">
+    <section id="blog" class="section-blog">
       <h2 class="heading2">blog</h2>
       <p class="paragraph paragraph--big u-margin-bottom-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="blog">
@@ -224,7 +224,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section id="contact" class="section-contact">
         <div class="form-box">
           <h2 class="heading2 heading2--white">contact us</h2>
           <p class="paragraph paragraph--big u-margin-bottom-big paragraph--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -242,5 +242,7 @@
     <p class="footer__copy">Copyright 2017 by PSDFreebies.com. All Rights Reserved</p>
     <p class="footer__copy">2018 Code by <span class="footer__copy--color">Patryk Kilian</span></p>
   </footer>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
