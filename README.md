@@ -6,7 +6,7 @@ Laout is built from scratch with flexbox and a little bit of css grid in some se
 I used javascript only for hamburger menu.
 It is full responsive.
 
-## Technologies and tools
+## tools
 
 * GULP  - running a tasks
 * SASS - css preprocessor i used
